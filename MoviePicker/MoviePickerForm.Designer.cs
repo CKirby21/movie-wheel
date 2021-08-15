@@ -38,12 +38,12 @@ namespace MoviePicker
             this.buttonRemove = new System.Windows.Forms.Button();
             this.labelMovieName = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.circlePictureBox1 = new MoviePicker.CirclePictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.labelYear = new System.Windows.Forms.Label();
             this.labelPlot = new System.Windows.Forms.Label();
             this.labelRating = new System.Windows.Forms.Label();
             this.labelActors = new System.Windows.Forms.Label();
-            this.circlePictureBox1 = new MoviePicker.CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,6 +108,24 @@ namespace MoviePicker
             this.labelMovieName.Tag = "result";
             this.labelMovieName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // circlePictureBox1
+            // 
+            this.circlePictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.circlePictureBox1.BackColor = System.Drawing.Color.LightGray;
+            this.circlePictureBox1.ImageLocation = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Eight-colour-wheel-2D.p" +
+    "ng/240px-Eight-colour-wheel-2D.png";
+            this.circlePictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("circlePictureBox1.InitialImage")));
+            this.circlePictureBox1.Location = new System.Drawing.Point(17, 107);
+            this.circlePictureBox1.MinimumSize = new System.Drawing.Size(100, 100);
+            this.circlePictureBox1.Name = "circlePictureBox1";
+            this.circlePictureBox1.Size = new System.Drawing.Size(300, 300);
+            this.circlePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circlePictureBox1.TabIndex = 0;
+            this.circlePictureBox1.TabStop = false;
+            this.toolTip.SetToolTip(this.circlePictureBox1, "Click to spin!");
+            this.circlePictureBox1.Click += new System.EventHandler(this.buttonSpinner_Click);
+            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -169,24 +187,6 @@ namespace MoviePicker
             this.labelActors.Size = new System.Drawing.Size(302, 86);
             this.labelActors.TabIndex = 6;
             this.labelActors.Tag = "result";
-            // 
-            // circlePictureBox1
-            // 
-            this.circlePictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.circlePictureBox1.BackColor = System.Drawing.Color.LightGray;
-            this.circlePictureBox1.ImageLocation = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Eight-colour-wheel-2D.p" +
-    "ng/240px-Eight-colour-wheel-2D.png";
-            this.circlePictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("circlePictureBox1.InitialImage")));
-            this.circlePictureBox1.Location = new System.Drawing.Point(17, 107);
-            this.circlePictureBox1.MinimumSize = new System.Drawing.Size(100, 100);
-            this.circlePictureBox1.Name = "circlePictureBox1";
-            this.circlePictureBox1.Size = new System.Drawing.Size(300, 300);
-            this.circlePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circlePictureBox1.TabIndex = 0;
-            this.circlePictureBox1.TabStop = false;
-            this.toolTip.SetToolTip(this.circlePictureBox1, "Click to spin!");
-            this.circlePictureBox1.Click += new System.EventHandler(this.buttonSpinner_Click);
             // 
             // MoviePickerForm
             // 
